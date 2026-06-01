@@ -43,7 +43,7 @@ const AllAplications = () => {
       </div>
 
       {filteredApps.length > 0 ? (
-        <div className="grid grid-cols-4 gap-6 px-6 mb-8">
+        <div className="grid grid-cols-4 gap-6 px-6 pb-8">
           {filteredApps.map((app) => (
             <div
               key={app.id}
