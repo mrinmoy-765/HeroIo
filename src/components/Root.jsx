@@ -6,7 +6,7 @@ import "react-toastify/dist/ReactToastify.css";
 
 export default function RootLayout() {
   return (
-    <div className="max-w-8xl mx-auto">
+    <div className="max-w-7xl mx-auto">
       <Navbar />
       <Outlet />
       <Footer />

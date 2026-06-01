@@ -1,5 +1,12 @@
+import Banner from "./Banner";
+import TrendingApps from "./TrendingApps";
 const Home = () => {
-  return <div>Home</div>;
+  return (
+    <>
+      <Banner />
+      <TrendingApps />
+    </>
+  );
 };
 
 export default Home;
