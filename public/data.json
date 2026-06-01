@@ -1,0 +1,273 @@
+ [
+  {
+    "id": 1,
+    "image": "https://img.magnific.com/premium-vector/chat-talk-consulting-discuss-logo-design-icon-vector_25572-285.jpg?semt=ais_hybrid&w=740&q=80",
+    "title": "ChatFlow",
+   "companyName": "FlowTech Ltd.",
+    "description": "A real-time messaging app with end-to-end encryption.",
+    "size": 45,
+    "reviews": 1200,
+    "ratingAvg": 4.5,
+    "downloads": 50000,
+    "ratings": [
+      { "name": "1 star", "count": 50 },
+      { "name": "2 star", "count": 70 },
+      { "name": "3 star", "count": 180 },
+      { "name": "4 star", "count": 400 },
+      { "name": "5 star", "count": 500 }
+    ]
+  },
+  {
+    "id": 2,
+    "image": "https://img.magnific.com/free-vector/vector-education-logo_779267-2083.jpg?semt=ais_hybrid&w=740&q=80",
+    "title": "FitTrack",
+   "companyName": "Healthify Inc.",
+    "description": "Track workouts, calories, and health metrics easily.",
+    "size": 60,
+    "reviews": 980,
+    "ratingAvg": 4.3,
+    "downloads": 40000,
+    "ratings": [
+      { "name": "1 star", "count": 40 },
+      { "name": "2 star", "count": 60 },
+      { "name": "3 star", "count": 150 },
+      { "name": "4 star", "count": 320 },
+      { "name": "5 star", "count": 410 }
+    ]
+  },
+  {
+    "id": 3,
+    "image": "https://img.freepik.com/premium-vector/logo-food-that-says-food-circle_1166763-20333.jpg",
+    "title": "Foodiez",
+   "companyName": "QuickBite",
+    "description": "Order food from your favorite restaurants instantly.",
+    "size": 80,
+    "reviews": 2100,
+    "ratingAvg": 4.6,
+    "downloads": 80000,
+    "ratings": [
+      { "name": "1 star", "count": 60 },
+      { "name": "2 star", "count": 80 },
+      { "name": "3 star", "count": 200 },
+      { "name": "4 star", "count": 600 },
+      { "name": "5 star", "count": 1160 }
+    ]
+  },
+  {
+    "id": 4,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS84Z4Ux5LqsLTOsPqZ49C3msuzQtrb4VMnOA&s",
+    "title": "NoteMaster",
+   "companyName": "WriteWell",
+    "description": "A simple and powerful note-taking application.",
+    "size": 25,
+    "reviews": 650,
+    "ratingAvg": 4.2,
+    "downloads": 25000,
+    "ratings": [
+      { "name": "1 star", "count": 30 },
+      { "name": "2 star", "count": 40 },
+      { "name": "3 star", "count": 100 },
+      { "name": "4 star", "count": 220 },
+      { "name": "5 star", "count": 260 }
+    ]
+  },
+  {
+    "id": 5,
+    "image": "https://static.vecteezy.com/system/resources/thumbnails/041/041/570/small/travel-app-logo-icon-brand-identity-sign-symbol-vector.jpg",
+    "title": "TravelGo",
+   "companyName": "WanderSoft",
+    "description": "Plan and book trips with ease.",
+    "size": 70,
+    "reviews": 1400,
+    "ratingAvg": 4.4,
+    "downloads": 60000,
+    "ratings": [
+      { "name": "1 star", "count": 55 },
+      { "name": "2 star", "count": 75 },
+      { "name": "3 star", "count": 220 },
+      { "name": "4 star", "count": 500 },
+      { "name": "5 star", "count": 550 }
+    ]
+  },
+  {
+    "id": 6,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhchwPHZwjJ88hs4HHLNLgTjnZTduLCkW4jw&s",
+    "title": "ShopEase",
+   "companyName": "MarketHub",
+    "description": "Online shopping made simple and fast.",
+    "size": 90,
+    "reviews": 3000,
+    "ratingAvg": 4.7,
+    "downloads": 120000,
+    "ratings": [
+      { "name": "1 star", "count": 70 },
+      { "name": "2 star", "count": 90 },
+      { "name": "3 star", "count": 300 },
+      { "name": "4 star", "count": 900 },
+      { "name": "5 star", "count": 1640 }
+    ]
+  },
+  {
+    "id": 7,
+    "image": "https://thumbs.dreamstime.com/b/weather-forecast-app-icon-sun-cloud-bright-simple-featuring-behind-symbolizing-changing-conditions-clear-approachable-337148352.jpg",
+    "title": "WeatherNow",
+   "companyName": "SkyCast",
+    "description": "Accurate weather forecasts and alerts.",
+    "size": 35,
+    "reviews": 870,
+    "ratingAvg": 4.1,
+    "downloads": 30000,
+    "ratings": [
+      { "name": "1 star", "count": 60 },
+      { "name": "2 star", "count": 80 },
+      { "name": "3 star", "count": 200 },
+      { "name": "4 star", "count": 300 },
+      { "name": "5 star", "count": 230 }
+    ]
+  },
+  {
+    "id": 8,
+    "image": "https://cdn.dribbble.com/userupload/43003804/file/e48703192b71592e6bb74ce02a43d8be.png?resize=400x0",
+    "title": "EduSmart",
+   "companyName": "Learnify",
+    "description": "Interactive learning platform for students.",
+    "size": 55,
+    "reviews": 1500,
+    "ratingAvg": 4.5,
+    "downloads": 70000,
+    "ratings": [
+      { "name": "1 star", "count": 50 },
+      { "name": "2 star", "count": 60 },
+      { "name": "3 star", "count": 180 },
+      { "name": "4 star", "count": 500 },
+      { "name": "5 star", "count": 710 }
+    ]
+  },
+  {
+    "id": 9,
+    "image": "https://img.freepik.com/premium-vector/logo-design-featuring-music-note-encompassed-by-multiple-colorful-arcs-circular-formation-design-sleek-simple-logo-music-streaming-service_538213-67235.jpg",
+    "title": "MusicWave",
+   "companyName": "TuneLab",
+    "description": "Stream your favorite music anytime.",
+    "size": 65,
+    "reviews": 2200,
+    "ratingAvg": 4.6,
+    "downloads": 95000,
+    "ratings": [
+      { "name": "1 star", "count": 65 },
+      { "name": "2 star", "count": 85 },
+      { "name": "3 star", "count": 250 },
+      { "name": "4 star", "count": 700 },
+      { "name": "5 star", "count": 1100 }
+    ]
+  },
+  {
+    "id": 10,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDITUBqijJGhUbHFawXBb_jh5sbsWJCgxeaA&s",
+    "title": "SecureVault",
+   "companyName": "SafeNet",
+    "description": "Keep your passwords and files secure.",
+    "size": 40,
+    "reviews": 500,
+    "ratingAvg": 4.3,
+    "downloads": 20000,
+    "ratings": [
+      { "name": "1 star", "count": 20 },
+      { "name": "2 star", "count": 40 },
+      { "name": "3 star", "count": 90 },
+      { "name": "4 star", "count": 160 },
+      { "name": "5 star", "count": 190 }
+    ]
+  },
+  {
+    "id": 11,
+    "image": "https://via.placeholder.com/150",
+    "title": "GameZone",
+   "companyName": "PlaySoft",
+    "description": "A hub for casual and arcade games.",
+    "size": 120,
+    "reviews": 4000,
+    "ratingAvg": 4.8,
+    "downloads": 200000,
+    "ratings": [
+      { "name": "1 star", "count": 80 },
+      { "name": "2 star", "count": 100 },
+      { "name": "3 star", "count": 300 },
+      { "name": "4 star", "count": 1200 },
+      { "name": "5 star", "count": 2320 }
+    ]
+  },
+  {
+    "id": 12,
+    "image": "https://via.placeholder.com/150",
+    "title": "FinancePro",
+   "companyName": "MoneyWise",
+    "description": "Manage expenses and track your budget.",
+    "size": 50,
+    "reviews": 900,
+    "ratingAvg": 4.4,
+    "downloads": 45000,
+    "ratings": [
+      { "name": "1 star", "count": 40 },
+      { "name": "2 star", "count": 60 },
+      { "name": "3 star", "count": 140 },
+      { "name": "4 star", "count": 320 },
+      { "name": "5 star", "count": 340 }
+    ]
+  },
+  {
+    "id": 13,
+    "image": "https://via.placeholder.com/150",
+    "title": "PhotoEditX",
+   "companyName": "PixelWorks",
+    "description": "Advanced photo editing tools in your pocket.",
+    "size": 85,
+    "reviews": 1750,
+    "ratingAvg": 4.6,
+    "downloads": 85000,
+    "ratings": [
+      { "name": "1 star", "count": 55 },
+      { "name": "2 star", "count": 75 },
+      { "name": "3 star", "count": 200 },
+      { "name": "4 star", "count": 600 },
+      { "name": "5 star", "count": 820 }
+    ]
+  },
+  {
+    "id": 14,
+    "image": "https://via.placeholder.com/150",
+    "title": "PhotoEditX",
+   "companyName": "MoveFast",
+    "description": "Advanced photo editing tools in your pocket.",
+    "size": 75,
+    "reviews": 2600,
+    "ratingAvg": 4.5,
+    "downloads": 110000,
+    "ratings": [
+      { "name": "1 star", "count": 70 },
+      { "name": "2 star", "count": 90 },
+      { "name": "3 star", "count": 260 },
+      { "name": "4 star", "count": 800 },
+      { "name": "5 star", "count": 1380 }
+    ]
+  },
+  {
+    "id": 15,
+    "image": "https://via.placeholder.com/150",
+    "title": "NewsDaily",
+   "companyName": "GlobalPress",
+    "description": "Stay updated with latest global news.",
+    "size": 30,
+    "reviews": 1100,
+    "ratingAvg": 4.2,
+    "downloads": 50000,
+    "ratings": [
+      { "name": "1 star", "count": 60 },
+      { "name": "2 star", "count": 80 },
+      { "name": "3 star", "count": 200 },
+      { "name": "4 star", "count": 400 },
+      { "name": "5 star", "count": 360 }
+    ]
+  }
+]
+
