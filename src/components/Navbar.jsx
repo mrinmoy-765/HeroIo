@@ -32,7 +32,7 @@ const Navbar = () => {
               <a>Home</a>
             </li>
             <li>
-              <a>Apps</a>
+              <Link to="/all-aplications">Apps</Link>
             </li>
             <li>
               <a>Installation</a>
@@ -52,7 +52,7 @@ const Navbar = () => {
             <a>Home</a>
           </li>
           <li>
-            <a>Apps</a>
+            <Link to="/all-aplications">Apps</Link>
           </li>
           <li>
             <a>Installation</a>

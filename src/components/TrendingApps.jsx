@@ -57,7 +57,7 @@ const TrendingApps = () => {
 
       <div className="flex justify-center mb-8">
         <Link
-          to="/apps"
+          to="/all-aplications"
           className="px-6 py-2 bg-linear-to-r from-[#632EE3] to-[#9F62F2] hover:bg-[#9486b4] text-white font-semibold rounded-lg transition-colors"
         >
           Show All Apps
