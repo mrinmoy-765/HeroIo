@@ -1,8 +1,12 @@
 import logo from "../assets/logo.png";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { FaGithub } from "react-icons/fa";
 
 const Navbar = () => {
+  const location = useLocation();
+
+  const isActive = (path) => location.pathname === path;
+
   return (
     <div className="navbar bg-white shadow-sm">
       <div className="navbar-start">
@@ -29,13 +33,36 @@ const Navbar = () => {
             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
           >
             <li>
-              <Link to="/">Home</Link>
+              <Link
+                to="/"
+                className={isActive("/") ? "border-b-2 border-purple-500" : ""}
+              >
+                Home
+              </Link>
             </li>
             <li>
-              <Link to="/all-aplications">Apps</Link>
+              <Link
+                to="/all-aplications"
+                className={
+                  isActive("/all-aplications")
+                    ? "border-b-2 border-purple-500"
+                    : ""
+                }
+              >
+                Apps
+              </Link>
             </li>
             <li>
-              <Link to="/installation">Installation</Link>
+              <Link
+                to="/installation"
+                className={
+                  isActive("/installation")
+                    ? "border-b-2 border-purple-500"
+                    : ""
+                }
+              >
+                Installation
+              </Link>
             </li>
           </ul>
         </div>
@@ -49,13 +76,34 @@ const Navbar = () => {
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
           <li>
-            <Link to="/">Home</Link>
+            <Link
+              to="/"
+              className={isActive("/") ? "border-b-2 border-purple-500" : ""}
+            >
+              Home
+            </Link>
           </li>
           <li>
-            <Link to="/all-aplications">Apps</Link>
+            <Link
+              to="/all-aplications"
+              className={
+                isActive("/all-aplications")
+                  ? "border-b-2 border-purple-500"
+                  : ""
+              }
+            >
+              Apps
+            </Link>
           </li>
           <li>
-            <Link to="/installation">Installation</Link>
+            <Link
+              to="/installation"
+              className={
+                isActive("/installation") ? "border-b-2 border-purple-500" : ""
+              }
+            >
+              Installation
+            </Link>
           </li>
         </ul>
       </div>

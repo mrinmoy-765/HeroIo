@@ -6,18 +6,19 @@ import Home from "./components/Home";
 import AllAplications from "./components/AllAplications";
 import AppDetails from "./components/AppDetails";
 import Installation from "./components/Installation";
+import ErrorPage from "./components/ErrorPage";
 import "./index.css";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Root />,
-    // errorElement: <ErrorPage />,
     children: [
       { path: "/", element: <Home /> },
       { path: "/all-aplications", element: <AllAplications /> },
       { path: "/app/:id", element: <AppDetails /> },
       { path: "/installation", element: <Installation /> },
+      { path: "*", element: <ErrorPage /> },
     ],
   },
 ]);
