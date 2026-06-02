@@ -67,10 +67,17 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="flex justify-center items-center gap-0.5">
-          <img src={logo} alt="Application Logo" className="h-10  w-10" />
-          <a className="text-xl  font-extrabold bg-linear-to-r from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent">
+          <img
+            src={logo}
+            alt="Application Logo"
+            className="h-8 w-8 sm:h-10 sm:w-10"
+          />
+          <Link
+            to="/"
+            className="text-lg sm:text-xl font-extrabold bg-linear-to-r from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent"
+          >
             Hero.IO
-          </a>
+          </Link>
         </div>
       </div>
       <div className="navbar-center hidden lg:flex">
@@ -110,10 +117,10 @@ const Navbar = () => {
       <div className="navbar-end">
         <Link
           to="https://github.com/mrinmoy-765/"
-          className="flex items-center justify-center gap-1.5 bg-linear-to-r from-[#632EE3] to-[#9F62F2] text-white rounded-sm px-3 py-1.5 font-semibold"
+          className="flex items-center justify-center gap-1 sm:gap-1.5 bg-linear-to-r from-[#632EE3] to-[#9F62F2] text-white rounded-sm px-2 sm:px-3 py-1 sm:py-1.5 font-semibold text-xs sm:text-sm"
         >
-          <FaGithub />
-          Contribute
+          <FaGithub className="text-sm sm:text-base" />
+          <span className="hidden sm:inline">Contribute</span>
         </Link>
       </div>
     </div>

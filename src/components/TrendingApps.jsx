@@ -15,14 +15,14 @@ const TrendingApps = () => {
 
   return (
     <>
-      <h1 className="text-2xl font-bold text-gray-600 text-center mt-7">
+      <h1 className="text-xl sm:text-2xl font-bold text-gray-600 text-center mt-6 sm:mt-7 px-4">
         Trending Apps
       </h1>
-      <p className="text-md font-light text-gray-500 text-center mt-2 mb-8">
+      <p className="text-sm sm:text-md font-light text-gray-500 text-center mt-2 mb-6 sm:mb-8 px-4">
         Explore All Trending Apps on the Market developed by us
       </p>
 
-      <div className="grid grid-cols-4 gap-6 px-6 mb-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 px-4 sm:px-6 mb-8">
         {displayApps.map((app) => (
           <Link
             key={app.id}
@@ -32,7 +32,7 @@ const TrendingApps = () => {
             <img
               src={app.image}
               alt={app.title}
-              className="w-full h-40 object-cover rounded-md mb-3"
+              className="w-full h-40  object-contain rounded-md mb-3"
             />
 
             <h3 className="text-lg font-semibold text-gray-800 mb-2 truncate">
@@ -54,10 +54,10 @@ const TrendingApps = () => {
         ))}
       </div>
 
-      <div className="flex justify-center mb-8">
+      <div className="flex justify-center mb-8 px-4">
         <Link
           to="/all-aplications"
-          className="px-6 py-2 bg-linear-to-r from-[#632EE3] to-[#9F62F2] hover:bg-[#9486b4] text-white font-semibold rounded-lg transition-colors"
+          className="px-4 sm:px-6 py-2 bg-linear-to-r from-[#632EE3] to-[#9F62F2] hover:bg-[#9486b4] text-white font-semibold rounded-lg transition-colors w-full sm:w-auto text-center"
         >
           Show All Apps
         </Link>

@@ -18,16 +18,16 @@ const AllAplications = () => {
   );
 
   return (
-    <div className="bg-gray-50">
-      <h1 className="text-2xl font-bold text-gray-600 text-center pt-7">
+    <div className="bg-gray-50 min-h-screen px-4">
+      <h1 className="text-xl sm:text-2xl font-bold text-gray-600 text-center pt-6 sm:pt-7">
         Our All Applications
       </h1>
-      <p className="text-md font-light text-gray-500 text-center mt-2 mb-8">
+      <p className="text-sm sm:text-md font-light text-gray-500 text-center mt-2 mb-6 sm:mb-8">
         Explore All Apps on the Market developed by us. We code for Millions
       </p>
 
-      <div className="flex justify-between items-center px-6 py-5">
-        <span className="text-xl font-semibold">
+      <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-4 px-2 sm:px-6 py-4 sm:py-5">
+        <span className="text-lg sm:text-xl font-semibold">
           {filteredApps.length} Apps Found
         </span>
         <div>
@@ -37,13 +37,13 @@ const AllAplications = () => {
             placeholder="Search apps by title..."
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
-            className="px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 w-64"
+            className="px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 w-full sm:w-64"
           />
         </div>
       </div>
 
       {filteredApps.length > 0 ? (
-        <div className="grid grid-cols-4 gap-6 px-6 pb-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 px-2 sm:px-6 pb-8">
           {filteredApps.map((app) => (
             <Link
               key={app.id}
@@ -53,7 +53,7 @@ const AllAplications = () => {
               <img
                 src={app.image}
                 alt={app.title}
-                className="w-full h-40 object-cover rounded-md mb-3"
+                className="w-full h-40 object-contain rounded-md mb-3"
               />
 
               <h3 className="text-lg font-semibold text-gray-800 mb-2 truncate">
@@ -75,8 +75,10 @@ const AllAplications = () => {
           ))}
         </div>
       ) : (
-        <div className="flex justify-center items-center py-16">
-          <p className="text-xl font-semibold text-gray-500">No App Found</p>
+        <div className="flex justify-center items-center py-16 px-4">
+          <p className="text-lg sm:text-xl font-semibold text-gray-500">
+            No App Found
+          </p>
         </div>
       )}
     </div>
