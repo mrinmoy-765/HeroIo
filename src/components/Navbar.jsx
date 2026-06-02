@@ -66,19 +66,16 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
-        <div className="flex justify-center items-center gap-0.5">
+        <Link to="/" className="flex justify-center items-center gap-0.5">
           <img
             src={logo}
             alt="Application Logo"
             className="h-8 w-8 sm:h-10 sm:w-10"
           />
-          <Link
-            to="/"
-            className="text-lg sm:text-xl font-extrabold bg-linear-to-r from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent"
-          >
+          <p className="text-lg sm:text-xl font-extrabold bg-linear-to-r from-[#632EE3] to-[#9F62F2] bg-clip-text text-transparent">
             Hero.IO
-          </Link>
-        </div>
+          </p>
+        </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">

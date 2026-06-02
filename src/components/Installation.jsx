@@ -5,12 +5,26 @@ import { toast } from "react-toastify";
 
 const Installation = () => {
   const [installedApps, setInstalledApps] = useState([]);
+  const [sortOption, setSortOption] = useState("");
 
   useEffect(() => {
     const apps = JSON.parse(localStorage.getItem("installedApps") || "[]");
     setInstalledApps(apps);
-    console.log(apps);
   }, []);
+
+  useEffect(() => {
+    const apps = JSON.parse(localStorage.getItem("installedApps") || "[]");
+    if (!apps || apps.length === 0) return;
+
+    let sortedApps = [...apps];
+    if (sortOption === "Low-size") {
+      sortedApps.sort((a, b) => a.size - b.size);
+    } else if (sortOption === "High-size") {
+      sortedApps.sort((a, b) => b.size - a.size);
+    }
+
+    setInstalledApps(sortedApps);
+  }, [sortOption]);
 
   const handleUninstall = (appId) => {
     const updatedApps = installedApps.filter((app) => app.id !== appId);
@@ -27,6 +41,22 @@ const Installation = () => {
       <p className="text-sm sm:text-md font-light text-gray-500 text-center mt-2 mb-6 sm:mb-8 px-4">
         Explore All Trending Apps on the Market developed by us
       </p>
+      <div className="flex justify-between px-25 my-5">
+        <p className="text-lg font-semibold text-gray-600">
+          {installedApps.length} Apps Found
+        </p>
+        <div className="flex justify-end mb-0">
+          <select
+            value={sortOption}
+            onChange={(e) => setSortOption(e.target.value)}
+            className="select select-bordered w-full max-w-xs"
+          >
+            <option value="">Sort By</option>
+            <option value="High-size">High Size</option>
+            <option value="Low-size">Low Size</option>
+          </select>
+        </div>
+      </div>
       <div className="max-w-4xl mx-auto space-y-2.5 px-4">
         {installedApps.map((app) => (
           <div
