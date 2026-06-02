@@ -41,7 +41,7 @@ const AppDetails = () => {
     const installedApps = JSON.parse(
       localStorage.getItem("installedApps") || "[]",
     );
-    setInstalled(installedApps.includes(Number(id)));
+    setInstalled(installedApps.some((item) => item.id === Number(id)));
   }, [id]);
 
   const chartData = useMemo(() => {
@@ -58,9 +58,20 @@ const AppDetails = () => {
     const installedApps = JSON.parse(
       localStorage.getItem("installedApps") || "[]",
     );
-    if (!installedApps.includes(app.id)) {
-      installedApps.push(app.id);
-      localStorage.setItem("installedApps", JSON.stringify(installedApps));
+
+    if (!installedApps.find((item) => item.id === app.id)) {
+      const newApp = {
+        id: app.id,
+        image: app.image,
+        title: app.title,
+        ratingAvg: app.ratingAvg,
+        downloads: app.downloads,
+        size: app.size,
+      };
+
+      const updatedApps = [...installedApps, newApp];
+
+      localStorage.setItem("installedApps", JSON.stringify(updatedApps));
       setInstalled(true);
       toast.success(`${app.title} installed successfully!`);
     }

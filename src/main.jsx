@@ -5,6 +5,7 @@ import Root from "./components/Root";
 import Home from "./components/Home";
 import AllAplications from "./components/AllAplications";
 import AppDetails from "./components/AppDetails";
+import Installation from "./components/Installation";
 import "./index.css";
 
 const router = createBrowserRouter([
@@ -16,6 +17,7 @@ const router = createBrowserRouter([
       { path: "/", element: <Home /> },
       { path: "/all-aplications", element: <AllAplications /> },
       { path: "/app/:id", element: <AppDetails /> },
+      { path: "/installation", element: <Installation /> },
     ],
   },
 ]);
