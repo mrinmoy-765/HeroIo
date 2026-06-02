@@ -7,7 +7,7 @@ const AllAplications = () => {
   const [searchTerm, setSearchTerm] = useState("");
 
   useEffect(() => {
-    fetch("./data.json")
+    fetch("/data.json")
       .then((res) => res.json())
       .then((data) => setApps(data));
   }, []);
@@ -45,9 +45,10 @@ const AllAplications = () => {
       {filteredApps.length > 0 ? (
         <div className="grid grid-cols-4 gap-6 px-6 pb-8">
           {filteredApps.map((app) => (
-            <div
+            <Link
               key={app.id}
-              className="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow p-4"
+              to={`/app/${app.id}`}
+              className="block bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow p-4 cursor-pointer hover:scale-105 transition-transform"
             >
               <img
                 src={app.image}
@@ -68,11 +69,9 @@ const AllAplications = () => {
                   </p>
                 </div>
 
-                <p className="text-sm text-gray-600">
-                  <span className="font-medium"></span> ⭐ {app.ratingAvg}
-                </p>
+                <p className="text-sm text-gray-600">⭐ {app.ratingAvg}</p>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       ) : (
