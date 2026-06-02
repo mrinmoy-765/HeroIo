@@ -109,7 +109,7 @@ const Navbar = () => {
       </div>
       <div className="navbar-end">
         <Link
-          to=""
+          to="https://github.com/mrinmoy-765/"
           className="flex items-center justify-center gap-1.5 bg-linear-to-r from-[#632EE3] to-[#9F62F2] text-white rounded-sm px-3 py-1.5 font-semibold"
         >
           <FaGithub />

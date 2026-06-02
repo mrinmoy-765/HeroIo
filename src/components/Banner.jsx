@@ -22,14 +22,14 @@ const Banner = () => {
         </span>
         <div className="flex items-center justify-center gap-2 mt-6">
           <Link
-            to=""
+            to="https://play.google.com/store/games"
             className="flex items-center justify-center gap-1.5 bg-transparent border border-gray-500 rounded-sm px-6 py-1.5 font-medium"
           >
             <img src={GP} alt="" />
             Google Play
           </Link>
           <Link
-            to=""
+            to="https://www.apple.com/app-store/"
             className="flex items-center justify-center gap-1.5 bg-transparent border border-gray-500 rounded-sm px-6 py-1.5 font-medium"
           >
             <img src={AP} alt="" />
